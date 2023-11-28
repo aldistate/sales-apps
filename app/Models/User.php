@@ -53,4 +53,12 @@ class User extends Authenticatable
     public function agent_details() {
         return $this->hasMany(AgentDetail::class);
     }
+
+    public function invoices() {
+        return $this->hasMany(Invoice::class);
+    }
+
+    public function agents_contracts() {
+        return $this->hasMany(AgentsContract::class);
+    }
 }

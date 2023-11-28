@@ -16,7 +16,7 @@ class Client extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function client_contract() {
+    public function clients_contract() {
         return $this->hasOne(ClientsContract::class);
     }
 }

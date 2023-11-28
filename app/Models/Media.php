@@ -15,4 +15,8 @@ class Media extends Model
     public function agent_detail() {
         return $this->hasOne(AgentDetail::class);
     }
+
+    public function agents_contract() {
+        return $this->hasOne(AgentsContract::class);
+    }
 }

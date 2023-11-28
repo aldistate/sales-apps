@@ -19,4 +19,8 @@ class ClientsContract extends Model
     public function service() {
         return $this->belongsTo(Service::class);
     }
+
+    public function invoice() {
+        return $this->hasOne(Invoice::class);
+    }
 }
