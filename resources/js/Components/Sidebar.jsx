@@ -3,13 +3,15 @@ import { Box, Button, Flex, Image, Text } from '@chakra-ui/react';
 export default function Sidebar() {
   return (
     <Flex
+      position="sticky"
+      top="0"
+      bottom="0"
       flexDir="column"
       alignItems="center"
       bg="#0B0B20"
       gap="32px"
       w={339}
       h={'100vh'}
-      pos="relative"
       _before={{
         content: `""`,
         pos: 'absolute',

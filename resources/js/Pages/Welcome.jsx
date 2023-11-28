@@ -9,7 +9,9 @@ import {
 } from '@chakra-ui/react';
 
 // TODO: move this code to data master page
-export default function Welcome({ laravelVersion, query }) {
+// TODO: remove placeholder array and query in props
+
+export default function Welcome({ query }) {
   const tab = {
     klien: 0,
     kategori: 1,
@@ -57,6 +59,11 @@ export default function Welcome({ laravelVersion, query }) {
             borderRadius="1px"
           />
         </Tabs>
+        {Array(100)
+          .fill('')
+          .map(v => (
+            <p key={v}>testing</p>
+          ))}
       </Flex>
     </AuthLayout>
   );
