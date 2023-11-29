@@ -21,7 +21,7 @@ return new class extends Migration
                 ->constrained('media')
                 ->cascadeOnUpdate()
                 ->cascadeOnDelete();
-            $table->integer('ktp');
+            $table->string('ktp');
             $table->string('agent_code');
             $table->timestamps();
             $table->softDeletes();
