@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('event_type')->nullable();
             $table->string('event_channel')->nullable();
             $table->bigInteger('amount');
-            $table->string('return_url');
+            $table->text('return_url');
             $table->timestamp('expires_at');
             $table->timestamps();
             $table->softDeletes();
